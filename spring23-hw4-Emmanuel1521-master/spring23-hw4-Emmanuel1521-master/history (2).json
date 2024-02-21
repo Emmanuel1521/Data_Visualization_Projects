@@ -1,0 +1,28 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Report Date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Report Date using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Report Date",
+    "expression": "grel:round(((cells['Infections'].value + cells['Deaths'].value + cells['Hospitalizations'].value)/(cells['Population Denominator'].value * 1.0))* 100000)",
+    "onError": "set-to-blank",
+    "newColumnName": "Rate",
+    "columnInsertIndex": 1,
+    "description": "Create column Rate at index 1 based on column Report Date using expression grel:round(((cells['Infections'].value + cells['Deaths'].value + cells['Hospitalizations'].value)/(cells['Population Denominator'].value * 1.0))* 100000)"
+  }
+]

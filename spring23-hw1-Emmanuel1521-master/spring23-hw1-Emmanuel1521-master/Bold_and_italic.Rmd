@@ -1,0 +1,14 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+This is ***Data visualization course***.
+
+  <html>
+    <head>
+      Hi,CS 625 is the course number for Data Visualization
+    </head>
+  </html>
+  
+My favourite search engine is [Duck Duck Go](https://duckduckgo.com).

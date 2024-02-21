@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='MergedDataset2' inline='true' name='federated.109zak00v5sh1u17gbtmt13p8e3t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MergedDataset2' name='textscan.14dcogx1ngbswi1f739mc004tnfj'>
+            <connection class='textscan' directory='C:/Users/gepre/Downloads' filename='MergedDataset2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14dcogx1ngbswi1f739mc004tnfj' name='MergedDataset2.csv' table='[MergedDataset2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Health District' ordinal='1' />
+            <column datatype='integer' name='all_manufacturer' ordinal='2' />
+            <column datatype='integer' name='pfizer_manufacturer' ordinal='3' />
+            <column datatype='real' name='pfizer_vaccines' ordinal='4' />
+            <column datatype='real' name='other_vaccines' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14dcogx1ngbswi1f739mc004tnfj' name='MergedDataset2.csv' table='[MergedDataset2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Health District' ordinal='1' />
+            <column datatype='integer' name='all_manufacturer' ordinal='2' />
+            <column datatype='integer' name='pfizer_manufacturer' ordinal='3' />
+            <column datatype='real' name='pfizer_vaccines' ordinal='4' />
+            <column datatype='real' name='other_vaccines' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Health District]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>Health District</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>all_manufacturer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[all_manufacturer]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>all_manufacturer</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pfizer_manufacturer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pfizer_manufacturer]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>pfizer_manufacturer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pfizer_vaccines</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pfizer_vaccines]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>pfizer_vaccines</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_vaccines</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[other_vaccines]</local-name>
+            <parent-name>[MergedDataset2.csv]</parent-name>
+            <remote-alias>other_vaccines</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='MergedDataset2.csv' datatype='table' name='[__tableau_internal_object_id__].[MergedDataset2.csv_770A43646DE246B79F15B3858CB67311]' role='measure' type='quantitative' />
+      <column caption='All Manufacturer' datatype='integer' name='[all_manufacturer]' role='measure' type='quantitative' />
+      <column caption='Other Vaccines' datatype='real' name='[other_vaccines]' role='measure' type='quantitative' />
+      <column caption='Pfizer Manufacturer' datatype='integer' name='[pfizer_manufacturer]' role='measure' type='quantitative' />
+      <column caption='Pfizer Vaccines' datatype='real' name='[pfizer_vaccines]' role='measure' type='quantitative' />
+      <column-instance column='[all_manufacturer]' derivation='Sum' name='[sum:all_manufacturer:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[other_vaccines]' derivation='Sum' name='[sum:other_vaccines:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pfizer_vaccines]' derivation='Sum' name='[sum:pfizer_vaccines:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:pfizer_vaccines:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:all_manufacturer:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:other_vaccines:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='MergedDataset2.csv' id='MergedDataset2.csv_770A43646DE246B79F15B3858CB67311'>
+            <properties context=''>
+              <relation connection='textscan.14dcogx1ngbswi1f739mc004tnfj' name='MergedDataset2.csv' table='[MergedDataset2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Health District' ordinal='1' />
+                  <column datatype='integer' name='all_manufacturer' ordinal='2' />
+                  <column datatype='integer' name='pfizer_manufacturer' ordinal='3' />
+                  <column datatype='real' name='pfizer_vaccines' ordinal='4' />
+                  <column datatype='real' name='other_vaccines' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Proportion of 1st dose being pfizer to other vaccines</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MergedDataset2' name='federated.109zak00v5sh1u17gbtmt13p8e3t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.109zak00v5sh1u17gbtmt13p8e3t'>
+            <column datatype='string' name='[Health District]' role='dimension' type='nominal' />
+            <column-instance column='[Health District]' derivation='None' name='[none:Health District:nk]' pivot='key' type='nominal' />
+            <column caption='Other Vaccines' datatype='real' name='[other_vaccines]' role='measure' type='quantitative' />
+            <column caption='Pfizer Manufacturer' datatype='integer' name='[pfizer_manufacturer]' role='measure' type='quantitative' />
+            <column caption='Pfizer Vaccines' datatype='real' name='[pfizer_vaccines]' role='measure' type='quantitative' />
+            <column-instance column='[other_vaccines]' derivation='Sum' name='[sum:other_vaccines:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pfizer_manufacturer]' derivation='Sum' name='[sum:pfizer_manufacturer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pfizer_vaccines]' derivation='Sum' name='[sum:pfizer_vaccines:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:other_vaccines:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:pfizer_vaccines:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:pfizer_vaccines:qk]&quot;</bucket>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:other_vaccines:qk]&quot;</bucket>
+              <bucket>&quot;[federated.109zak00v5sh1u17gbtmt13p8e3t].[sum:pfizer_manufacturer:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.109zak00v5sh1u17gbtmt13p8e3t].[Multiple Values]</rows>
+        <cols>([federated.109zak00v5sh1u17gbtmt13p8e3t].[none:Health District:nk] / [federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{8BDAC974-2718-4170-874D-1711EE2FEFDA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.109zak00v5sh1u17gbtmt13p8e3t].[:Measure Names]</field>
+            <field>[federated.109zak00v5sh1u17gbtmt13p8e3t].[none:Health District:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8AD43342-4A24-48D0-8729-5C913E15232A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

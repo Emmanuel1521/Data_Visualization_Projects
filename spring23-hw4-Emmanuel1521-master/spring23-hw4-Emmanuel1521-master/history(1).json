@@ -1,0 +1,371 @@
+[
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Dose Number",
+          "expression": "value",
+          "columnName": "Dose Number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 2,
+                "l": "2"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Dose Number",
+          "expression": "value",
+          "columnName": "Dose Number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 3,
+                "l": "3"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Dose Number",
+          "expression": "value",
+          "columnName": "Dose Number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 4,
+                "l": "4"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Dose Number",
+          "expression": "value",
+          "columnName": "Dose Number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 5,
+                "l": "5"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Dose Number",
+          "expression": "value",
+          "columnName": "Dose Number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 6,
+                "l": "6"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Health District",
+          "expression": "value",
+          "columnName": "Health District",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Out of State",
+                "l": "Out of State"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Health District",
+          "expression": "value",
+          "columnName": "Health District",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Not Reported",
+                "l": "Not Reported"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Vaccine Manufacturer",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Vaccine Manufacturer using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Vaccine Manufacturer",
+          "expression": "grel:value.contains(\"pfizer\")",
+          "columnName": "Vaccine Manufacturer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Vaccine Manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pfizer 0-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pfizer"
+      }
+    ],
+    "description": "Mass edit cells in column Vaccine Manufacturer"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Vaccine Manufacturer",
+          "expression": "grel:value.contains(\"pfizer\")",
+          "columnName": "Vaccine Manufacturer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Vaccine Manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pfizer 12+"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pfizer"
+      }
+    ],
+    "description": "Mass edit cells in column Vaccine Manufacturer"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Vaccine Manufacturer",
+          "expression": "grel:value.contains(\"pfizer\")",
+          "columnName": "Vaccine Manufacturer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Vaccine Manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pfizer 5-11"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pfizer"
+      }
+    ],
+    "description": "Mass edit cells in column Vaccine Manufacturer"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Vaccine Manufacturer",
+          "expression": "grel:value.contains(\"pfizer\")",
+          "columnName": "Vaccine Manufacturer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Vaccine Manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pfizer bv 0-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pfizer"
+      }
+    ],
+    "description": "Mass edit cells in column Vaccine Manufacturer"
+  }
+]

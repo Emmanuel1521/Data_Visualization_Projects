@@ -1,0 +1,6 @@
+---
+output:
+  html_document: default
+  word_document: default
+---
+### This is Level 3 heading.
